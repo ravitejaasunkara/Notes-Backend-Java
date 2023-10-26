@@ -24,7 +24,6 @@ public class AuthController {
 
 	@PostMapping(path = "/auth/login")
 	public ResponseEntity<ApiResponse> loginUser(@RequestBody Auth auth) {
-		ResponseEntity<ApiResponse> loginUser = service.loginUser(auth);
-		return loginUser;
+		return service.loginUser(auth);
 	}
 }
