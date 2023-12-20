@@ -22,6 +22,8 @@ public class NotesController {
 	
 	@Autowired
 	private NotesService notesService;
+
+	int a = 10;
 	
 	@GetMapping(path = "/notes/{userId}")
 	public ResponseEntity<ApiResponse> getAllNotesByUserId(@PathVariable int userId) {
